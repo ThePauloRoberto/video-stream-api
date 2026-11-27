@@ -1,0 +1,21 @@
+target/
+.m2-local/
+.env
+*.log
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Agent skills & customizations
+.agent/
+.agents/
+*video-stream-api/.agents
