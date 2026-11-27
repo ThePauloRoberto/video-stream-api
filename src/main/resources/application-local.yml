@@ -1,0 +1,17 @@
+# Perfil para desenvolvimento local com LocalStack (docker compose up -d)
+video:
+  storage:
+    bucket: videos
+    region: us-east-1
+    key-prefix: videos/
+    endpoint-override: http://localhost:4566
+    path-style-access: true
+    chunked-encoding-enabled: false
+    # credenciais fixas são aceitáveis SOMENTE em ambiente local
+    access-key-id: test
+    secret-access-key: test
+
+logging:
+  level:
+    com.videostream: DEBUG
+    software.amazon.awssdk: INFO
